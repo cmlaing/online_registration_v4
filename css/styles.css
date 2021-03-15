@@ -28,12 +28,14 @@ a {
 }
 
 .wrapper {
-    text-align: center;
+    text-align: left;
     margin: 0px;
   
   }
 
 /* ========== Header---------------------------------*/
+
+
 
 .header-title {
     background-color:#444658;
@@ -42,6 +44,7 @@ a {
     padding: 30px;
     border: 10px;
     margin: 0 auto;
+    text-align: center;
 
 }
 
@@ -53,6 +56,18 @@ a {
     border-bottom: 5px solid black;
     padding-bottom: 5px;
     margin: 3px;
+    text-align: center;
+
+}
+
+h1,
+legend {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #a5a2a2;
 
 }
 
@@ -61,13 +76,82 @@ border-top: 2px solid black;
 
 }
 
-.newsletter {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  background-color:#f3efef;
+  border: none;
+  border-radius: 2px;
+  padding: 15px;
+  margin: 5px 0;
+}
 
+label {
+  color: #575656;
+}
+
+::placeholder {
+  text-align: right;
+  font-style: italic;
+  padding: 2px;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+label {
+  padding: 15px;
+}
+
+
+
+.submit-btn {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  background-color: #2fb6b6;
+  border-radius: 5px;
 
 }
 
+form input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+  border: 2px solid #4a53ca;
+  border-radius: 5px;
+}
+
+
+
 /* ========== Footer--------------------------------*/
+
+footer {
+  font-style: italic;
+  color: #a5a2a2;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  margin: 5px;
+
+}
 
 /* ========== Media Queries ------------------------*/
 
 /* ========== 768px+ screens (tablet/desktop) -----------------*/
+
+@media (min-width: 768px) {
+ 
+  main {
+  
+    align-content: center;
+    
+    
+
+  }
+
+
+}
