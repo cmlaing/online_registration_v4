@@ -52,6 +52,8 @@ a {
 
 /* ========== Main Content--------------------------*/
 
+
+
 .intro {
     border-bottom: 5px solid black;
     padding-bottom: 5px;
@@ -85,13 +87,10 @@ textarea {
   background-color:#f3efef;
   border: none;
   border-radius: 2px;
-  padding: 15px;
-  margin: 5px 0;
+  padding: 10px;
+  margin: 15px 0;
 }
 
-label {
-  color: #575656;
-}
 
 ::placeholder {
   text-align: right;
@@ -102,19 +101,31 @@ label {
 input[type="checkbox"],
 input[type="radio"],
 label {
-  padding: 15px;
+  padding: 5px;
+}
+
+/*label and text/input area alignment, e.g. Name: (content to the side or under)*/
+.flex-pair {
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+label {
+  margin-bottom: 5px;
+  color: #575656;
 }
 
 
-
-.submit-btn {
-  color: white;
+.btn {
+  color: #ffffff;
   width: 100%;
   padding: 10px;
   background-color: #2fb6b6;
   border-radius: 5px;
-
 }
+
 
 form input:focus,
 textarea:focus,
@@ -154,6 +165,36 @@ footer {
    width: 70%;
    margin: 0 auto;
 
+  }
+
+  input,
+  select {
+    flex-grow: 1;
+    flex-basis: 75%;
+    height: 40px;
+  }
+
+  .flex-pair {
+    flex-direction: row;
+    flex-basis: 25%;
+    height: 50px;
+    margin: auto 0;
+
+  }
+
+  label {
+    flex-basis: 25%;
+    margin: auto 0;
+  }
+
+  #zipcode {
+    max-width: 30%;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    transform: scale(1.5);
+    
   }
 
 

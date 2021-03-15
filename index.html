@@ -34,21 +34,34 @@
                     <fieldset>
                         <legend>Contact Information</legend>
 
-                    <label for="name"> Full Name: </label> <br>
-                    <input required type="text" id="name" name="user_name" placeholder="Required"> <br>
 
+                    <div class="flex-pair">
+                    <label for="name"> Full Name: </label> 
+                    <input required type="text" id="name" name="user_name" placeholder="Required"> 
+                    </div>
+
+                    <div class="flex-pair">
                     <label for="email"> Email Address: </label> <br>
                     <input required type="email" id="email" name="user_email" placeholder="Required"> <br>
+                    </div>
 
+
+                    <div class="flex-pair">
                     <label for="phone"> Phone Number: </label> <br>
                     <input type="tel" id="phone" name="user_phone" placeholder="example: (555) 555-5555"> <br>
+                    </div>
 
+                    <div class="flex-pair">
                     <label for="address"> Street Address: </label> <br>
                     <input type="text" id="address" name="user_address"> <br>
+                    </div>
 
+                    <div class="flex-pair">
                     <label for="city"> City: </label> <br>
                     <input type="text" id="city" name="user_city"> <br>
+                    </div>
 
+                    <div class="flex-pair">
                     <label for="state"> State: </label> <br>
                     <select id="state" name="user_state">
                         <option value="Alabama">Alabama</option>
@@ -103,15 +116,19 @@
                         <option value="Wyoming">Wyoming</option>
                         
                     </select>
+                    </div>
                     <br>
-
+                    <div class="flex-pair">
                     <label for="zipcode"> Zip Code: </label> <br>
                     <input type="text" id="zipcode" name="user_zipcode"> <br>
+                    </div>
 
                     </fieldset>
+
+                    <br>
             
                 <fieldset class="newsletters-format">
-                    <br>
+                    
 
                     <legend>
                         Newsletter 
@@ -152,7 +169,7 @@
 
                     <br>
                     <br>
-                    <button class="submit-btn" type="submit"> Sign Up </button>
+                    <button class="btn" type="submit"> Sign Up </button>
 
             </fieldset>
 
